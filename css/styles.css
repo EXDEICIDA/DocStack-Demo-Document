@@ -638,3 +638,112 @@ footer {
     font-size: var(--text-sm);
   }
 }
+
+.try-now-section {
+  padding: 120px 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  position: relative;
+  overflow: hidden;
+}
+
+.try-now-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.try-now-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.try-now-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.try-now-text h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.try-now-text p {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.try-now-logo {
+  width: 300px;
+  height: 300px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.download-button img {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .try-now-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .try-now-text {
+    text-align: center;
+  }
+  
+  .try-now-text h2 {
+    font-size: 2.5rem;
+  }
+  
+  .try-now-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
