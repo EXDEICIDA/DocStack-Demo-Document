@@ -1013,6 +1013,20 @@ footer {
   transition: transform 0.3s ease;
 }
 
+.feature-image svg {
+  width: 75px;
+  height: 75px;
+  transition: transform 0.3s ease;
+}
+
+.feature-image svg:hover {
+  transform: scale(1.1);
+}
+
+.feature-card:hover .feature-image svg {
+  transform: scale(1.1);
+}
+
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
