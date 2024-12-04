@@ -43,10 +43,23 @@
         <p>Your Smart Document Management Solution</p>
         <div class="cta-buttons">
           <a href="#download" class="cta-primary">Download for Free</a>
-          <a href="#demo" class="cta-secondary">Watch Demo</a>
+          <a href="#video-demo" class="cta-secondary" id="watchDemoBtn">Watch Demo</a>
         </div>
       </div>
     </section>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="video-container">
+          <video id="demoVideo" controls>
+            <source src="Images/Features/Demo-Audience-App.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
 
     <main class="main-content">
       <div id="overview" class="overview-intro">
@@ -146,6 +159,44 @@
           </div>
         </div>
       </section>
+      <section id="features" class="features-section">
+        <div class="features-intro">
+          <h3 class="features-intro-subtitle">Powerful Features</h3>
+          <h2 class="features-intro-title">Smart Tools for Modern Development</h2>
+          <p class="features-intro-description">
+            Experience a new level of productivity with our cutting-edge features designed for modern developers.
+          </p>
+        </div>
+        
+        <div class="features-grid">
+          <!-- Frontier Intelligence -->
+          <div class="feature-card">
+            <h3>Frontier Intelligence</h3>
+            <p>Powered by a mix of purpose-built and frontier models, Cursor is smart and fast.</p>
+            <div class="feature-image">
+              <img src="Images/Features/Locate-Pdf.png" alt="Frontier Intelligence Icon">
+            </div>
+          </div>
+      
+          <!-- Private and Secure -->
+          <div class="feature-card">
+            <h3>Private and Secure</h3>
+            <p>With Privacy Mode, your code is only stored locally. Cursor is SOC 2 certified.</p>
+            <div class="feature-image">
+              <img src="Images/Features/Reccomended-Papers-Feature.png" alt="Security Shield Icon">
+            </div>
+          </div>
+      
+          <!-- Feels Familiar -->
+          <div class="feature-card">
+            <h3>Feels Familiar</h3>
+            <p>Import all your extensions, themes, and keybindings in one click.</p>
+            <div class="feature-image">
+              <img src="Images/Features/Trending-Fields.png" alt="Familiar Interface Icon">
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <section class="try-now-section">
@@ -229,8 +280,7 @@
         </div>
       </div>
     </footer>
-
-    <!-- Footer CSS -->
+    <script src="js/modal.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
